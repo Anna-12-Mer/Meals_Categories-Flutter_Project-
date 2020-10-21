@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../models/meal.dart';
 import '../widgets/meal_item.dart';
 
-
 class CategoryMealsScreen extends StatefulWidget {
   static const routeName = '/category-meals';
   final List<Meal> availableMeals;
@@ -59,7 +58,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
             affordability: displayedMeals[index].affordability,
             complexity: displayedMeals[index].complexity,
             duration: displayedMeals[index].duration,
-            removeItem: _removeMeal,
           );
         },
         itemCount: displayedMeals.length,
